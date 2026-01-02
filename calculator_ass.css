@@ -1,0 +1,80 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: CalC;
+    src: url(../../Assets/fonts/digital-7.ttf);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+}
+#calculator_body{
+    height: 60%;
+    width: 60vh;
+    padding-right: 9px;
+    padding-bottom: 7px;
+    display: grid;
+    background-color: gainsboro;
+    /* grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr); */
+}
+.block{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    /* border: solid 1px black; */
+    grid-template-columns : repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.blocks{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    /* font-weight: bold; */
+    margin: 5px ;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(24, 19, 19, 0.794);
+    border: solid 1px black;
+    font-family: CalC;
+}
+.block1{
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-content: right;
+    font-family: CalC;
+    font-weight: normal;
+}
+.block2{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: red;
+}
+.block3,.block4,.block12,.block8{
+    background-color: grey;
+}
+.block16{
+    grid-column-start: 4;
+    grid-row-start: 5;
+    grid-row-end: 7 ;
+    background-color: rgb(4, 4, 56);
+}
+.block17{
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
